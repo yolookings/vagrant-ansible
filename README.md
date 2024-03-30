@@ -1,6 +1,6 @@
 # Provisioning Ubuntu VMs with Apache2 and Bind9 using Ansible
 
-This repository contains configuration files for provisioning Ubuntu VMs with Apache2 and Bind9 using Ansible. It includes a Vagrantfile for defining VM configurations and a playbook.yaml file for specifying Ansible tasks.
+This repository contains configuration files for provisioning Ubuntu VMs with Apache2 and Bind9 using Ansible. It includes a Vagrantfile for defining VM configurations, a playbook.yaml file for specifying Ansible tasks, and a `hosts` file for defining host inventory.
 
 ## Files
 
@@ -9,6 +9,9 @@ This repository contains configuration files for provisioning Ubuntu VMs with Ap
 
 - `playbook.yaml`:
   The playbook.yaml file contains Ansible tasks for provisioning the VMs. It updates the apt cache, installs Apache2 and Bind9, and enables their services.
+
+- `hosts`:
+  The hosts file defines the inventory for Ansible. It specifies the connection details for each VM, including hostname, IP address, SSH user, SSH port, and SSH private key file.
 
 ## Usage
 
