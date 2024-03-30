@@ -12,30 +12,36 @@ This repository contains configuration files for provisioning Ubuntu VMs with Ap
 
 ## Usage
 
-1. Clone this repository to your local machine:
+1. Ensure you have Vagrant and VirtualBox installed on your machine. You can download them from the following links:
+   - [Vagrant](https://www.vagrantup.com/downloads)
+   - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+
+2. Clone this repository to your local machine:
 
    ```bash
    git clone https://github.com/athallabf/vagrant-ansible.git
    ```
 
-2. Navigate to the repository directory:
+3. Navigate to the repository directory:
 
    ```bash
    cd vagrant-ansible
    ```
 
-3. Modify the `Vagrantfile` if necessary, such as adjusting VM names or box versions.
+4. Modify the `Vagrantfile` if necessary, such as adjusting VM names or box versions.
 
-4. Run the following command to start provisioning the VMs:
+5. Run the following command to start provisioning the VMs:
 
    ```bash
    vagrant up
    ```
 
-5. Ansible will automatically run the playbook (`playbook.yaml`) to install Apache2 and Bind9 on the VMs.
+6. Ansible will automatically run the playbook (`playbook.yaml`) to install Apache2 and Bind9 on the VMs.
 
-6. Once provisioning is complete, you can access the VMs and verify the services are running as expected.
+7. Once provisioning is complete, you can access the VMs and verify the services are running as expected.
 
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+
