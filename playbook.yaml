@@ -1,0 +1,29 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install Apache
+      apt:
+        name: apache2
+        state: present
+
+    - name: Install BIND9
+      apt:
+        name: bind9
+        state: present
+
+    - name: Enable Apache service
+      systemd:
+        name: apache2
+        state: started
+        enabled: yes
+
+    - name: Enable BIND9 service
+      systemd:
+        name: bind9
+        state: started
+        enabled: yes

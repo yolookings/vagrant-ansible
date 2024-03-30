@@ -1,0 +1,3 @@
+satu ansible_host=127.0.0.1 ansible_user=vagrant ansible_port=2222 ansible_ssh_private_key_file=./.vagrant/machines/satu/virtualbox/private_key
+
+dua ansible_host=127.0.0.1 ansible_user=vagrant ansible_port=2200 ansible_ssh_private_key_file=./.vagrant/machines/dua/virtualbox/private_key
